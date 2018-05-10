@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import GridListExampleSimple from './GridListExampleSimple.js';
+import AppBar from 'material-ui/AppBar';
+import GridListExampleSimple from './GridListExampleSimple';
+import TextFieldExampleSimple from './TextFieldExampleSimple';
 
 class Application extends Component {
   render() {
     return (
-        <GridListExampleSimple/>
+      <div>
+      <AppBar
+          title="Title"
+          iconClassNameRight="muidocs-icon-navigation-expand-more"
+        />
+      <GridListExampleSimple/>
+      <img src={ require('./images/image1.jpeg') } />
+      <TextFieldExampleSimple/>
+      </div>
     );
   }
 }
