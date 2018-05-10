@@ -17,44 +17,36 @@ const styles = {
   },
 };
 
+
 const tilesData = [
+
   {
-    img: 'images/grid-list/img1.jpg',
-    title: 'Breakfast',
-    author: 'jill111',
-  },
-  {
-    img: 'images/grid-list/img2.jpeg',
-    title: 'Tasty burger',
-    author: 'pashminu',
-  },
-  {
-    img: 'images/grid-list/img3.jpeg',
+    img: './images/image3.jpeg',
     title: 'Camera',
     author: 'Danson67',
   },
   {
-    img: 'images/grid-list/img4.jpeg',
+    img: './images/image4.jpeg',
     title: 'Morning',
     author: 'fancycrave1',
   },
   {
-    img: 'images/grid-list/img5.jpeg',
+    img: './images/image5.jpeg',
     title: 'Hats',
     author: 'Hans',
   },
   {
-    img: 'images/grid-list/img6.jpeg',
+    img: './images/image6.jpeg',
     title: 'Honey',
     author: 'fancycravel',
   },
   {
-    img: 'images/grid-list/img7.jpeg',
+    img: './images/image7.jpeg',
     title: 'Vegetables',
     author: 'jill111',
   },
   {
-    img: 'images/grid-list/img8.jpeg',
+    img: './images/image8.jpeg',
     title: 'Water plant',
     author: 'BkrmadtyaKarki',
   },
