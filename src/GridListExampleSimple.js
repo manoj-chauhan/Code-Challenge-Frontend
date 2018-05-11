@@ -5,75 +5,74 @@ import Subheader from 'material-ui/Subheader';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
 
 const styles = {
-  root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
-  },
-  gridList: {
-    width: 500,
-    height: 450,
-    overflowY: 'auto',
-  },
+    root: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'space-around',
+    },
+    gridList: {
+        width: 500,
+        height: 450,
+        overflowY: 'auto'
+    },
 };
 
 
 const tilesData = [
 
-  {
-    img: './images/image3.jpeg',
-    title: 'Camera',
-    author: 'Danson67',
-  },
-  {
-    img: './images/image4.jpeg',
-    title: 'Morning',
-    author: 'fancycrave1',
-  },
-  {
-    img: './images/image5.jpeg',
-    title: 'Hats',
-    author: 'Hans',
-  },
-  {
-    img: './images/image6.jpeg',
-    title: 'Honey',
-    author: 'fancycravel',
-  },
-  {
-    img: './images/image7.jpeg',
-    title: 'Vegetables',
-    author: 'jill111',
-  },
-  {
-    img: './images/image8.jpeg',
-    title: 'Water plant',
-    author: 'BkrmadtyaKarki',
-  },
+    {
+        img: './images/image3.jpeg',
+        title: 'Camera',
+        author: 'Danson67',
+    },
+    {
+        img: './images/image4.jpeg',
+        title: 'Morning',
+        author: 'fancycrave1',
+    },
+    {
+        img: './images/image5.jpeg',
+        title: 'Hats',
+        author: 'Hans',
+    },
+    {
+        img: './images/image6.jpeg',
+        title: 'Honey',
+        author: 'fancycravel',
+    },
+    {
+        img: './images/image7.jpeg',
+        title: 'Vegetables',
+        author: 'jill111',
+    },
+    {
+        img: './images/image8.jpeg',
+        title: 'Water plant',
+        author: 'BkrmadtyaKarki',
+    },
 ];
 
 /**
  * A simple example of a scrollable `GridList` containing a [Subheader](/#/components/subheader).
  */
 const GridListExampleSimple = () => (
-  <div style={styles.root}>
-    <GridList
-      cellHeight={180}
-      style={styles.gridList}
-    >
-      <Subheader>December</Subheader>
-      {tilesData.map((tile) => (
-        <GridTile
-          key={tile.img}
-          title={tile.title}
-          subtitle={<span>by <b>{tile.author}</b></span>}
-          actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
+    <div style={styles.root}>
+        <GridList
+            cellHeight={180}
         >
-          <img src={tile.img} />
-        </GridTile>
-      ))}
-    </GridList>
-  </div>
+            <Subheader>December</Subheader>
+            {tilesData.map((tile) => (
+                <GridTile
+                    key={tile.img}
+                    title={tile.title}
+                    subtitle={<span>by <b>{tile.author}</b></span>}
+                    actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
+                >
+                    <img src={tile.img} />
+                </GridTile>
+            ))}
+        </GridList>
+    </div>
 );
 
 export default GridListExampleSimple;
