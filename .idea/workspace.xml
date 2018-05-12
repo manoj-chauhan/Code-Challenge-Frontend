@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a2d69098-20b6-406e-b85b-89db07d16774" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GridListExampleSimple.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/GridListExampleSimple.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Application.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Application.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="556">
+              <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -34,11 +31,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GridListExampleSimple.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyFancyComponent.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MyFancyComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GridListExampleSimple.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GridListExampleSimple.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="89" column="31" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
+            <state relative-caret-position="692">
+              <caret line="99" selection-start-line="99" selection-end-line="99" selection-end-column="37" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -75,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -116,8 +125,9 @@
         <option value="$PROJECT_DIR$/src/test.js" />
         <option value="$PROJECT_DIR$/src/TabsExampleSimple.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/Application.js" />
         <option value="$PROJECT_DIR$/src/GridListExampleSimple.js" />
+        <option value="$PROJECT_DIR$/src/MyFancyComponent.js" />
+        <option value="$PROJECT_DIR$/src/Application.js" />
       </list>
     </option>
   </component>
@@ -207,12 +217,12 @@
       <updated>1526003301442</updated>
       <workItem from="1526003305775" duration="3989000" />
       <workItem from="1526048509853" duration="80000" />
-      <workItem from="1526064369011" duration="3449000" />
+      <workItem from="1526064369011" duration="7140000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7518000" />
+    <option name="totallyTimeSpent" value="11209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1018" extended-state="0" />
@@ -391,29 +401,39 @@
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GridListExampleSimple.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="89" column="31" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
+        <state relative-caret-position="692">
+          <caret line="99" selection-start-line="99" selection-end-line="99" selection-end-column="37" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyFancyComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
