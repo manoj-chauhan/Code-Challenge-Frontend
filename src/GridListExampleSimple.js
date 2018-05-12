@@ -3,6 +3,7 @@ import {GridList, GridTile} from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
+import Media from "react-media";
 
 const styles = {
     root: {
@@ -57,21 +58,42 @@ const tilesData = [
  */
 const GridListExampleSimple = () => (
     <div style={styles.root}>
-        <GridList
-            cellHeight={180}
-        >
-            <Subheader>December</Subheader>
-            {tilesData.map((tile) => (
-                <GridTile
-                    key={tile.img}
-                    title={tile.title}
-                    subtitle={<span>by <b>{tile.author}</b></span>}
-                    actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
-                >
-                    <img src={tile.img} />
-                </GridTile>
-            ))}
-        </GridList>
+
+
+        <Media query="(max-width: 599px)">
+            {matches =>
+                matches ? (
+                    <GridList cellHeight={180} cols={2}>
+                        {tilesData.map((tile) => (
+                            <GridTile
+                                key={tile.img}
+                                title={tile.title}
+                                subtitle={<span>by <b>{tile.author}</b></span>}
+                                actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
+                            >
+                                <img src={tile.img} />
+                            </GridTile>
+                        ))}
+                    </GridList>
+                ) : (
+                    <GridList cellHeight={180} cols={4}>
+                        {tilesData.map((tile) => (
+                            <GridTile
+                                key={tile.img}
+                                title={tile.title}
+                                subtitle={<span>by <b>{tile.author}</b></span>}
+                                actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
+                            >
+                                <img src={tile.img} />
+                            </GridTile>
+                        ))}
+                    </GridList>
+                )
+            }
+        </Media>
+
+
+
     </div>
 );
 
