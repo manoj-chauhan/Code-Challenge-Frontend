@@ -50,6 +50,296 @@ const tilesData = [
         img: './images/image8.jpeg',
         title: 'Water plant',
         author: 'BkrmadtyaKarki',
+    }, {
+        img: './images/image3.jpeg',
+        title: 'Camera',
+        author: 'Danson67',
+    },
+    {
+        img: './images/image4.jpeg',
+        title: 'Morning',
+        author: 'fancycrave1',
+    },
+    {
+        img: './images/image5.jpeg',
+        title: 'Hats',
+        author: 'Hans',
+    },
+    {
+        img: './images/image6.jpeg',
+        title: 'Honey',
+        author: 'fancycravel',
+    },
+    {
+        img: './images/image7.jpeg',
+        title: 'Vegetables',
+        author: 'jill111',
+    },
+    {
+        img: './images/image8.jpeg',
+        title: 'Water plant',
+        author: 'BkrmadtyaKarki',
+    }, {
+        img: './images/image3.jpeg',
+        title: 'Camera',
+        author: 'Danson67',
+    },
+    {
+        img: './images/image4.jpeg',
+        title: 'Morning',
+        author: 'fancycrave1',
+    },
+    {
+        img: './images/image5.jpeg',
+        title: 'Hats',
+        author: 'Hans',
+    },
+    {
+        img: './images/image6.jpeg',
+        title: 'Honey',
+        author: 'fancycravel',
+    },
+    {
+        img: './images/image7.jpeg',
+        title: 'Vegetables',
+        author: 'jill111',
+    },
+    {
+        img: './images/image8.jpeg',
+        title: 'Water plant',
+        author: 'BkrmadtyaKarki',
+    }, {
+        img: './images/image3.jpeg',
+        title: 'Camera',
+        author: 'Danson67',
+    },
+    {
+        img: './images/image4.jpeg',
+        title: 'Morning',
+        author: 'fancycrave1',
+    },
+    {
+        img: './images/image5.jpeg',
+        title: 'Hats',
+        author: 'Hans',
+    },
+    {
+        img: './images/image6.jpeg',
+        title: 'Honey',
+        author: 'fancycravel',
+    },
+    {
+        img: './images/image7.jpeg',
+        title: 'Vegetables',
+        author: 'jill111',
+    },
+    {
+        img: './images/image8.jpeg',
+        title: 'Water plant',
+        author: 'BkrmadtyaKarki',
+    }, {
+        img: './images/image3.jpeg',
+        title: 'Camera',
+        author: 'Danson67',
+    },
+    {
+        img: './images/image4.jpeg',
+        title: 'Morning',
+        author: 'fancycrave1',
+    },
+    {
+        img: './images/image5.jpeg',
+        title: 'Hats',
+        author: 'Hans',
+    },
+    {
+        img: './images/image6.jpeg',
+        title: 'Honey',
+        author: 'fancycravel',
+    },
+    {
+        img: './images/image7.jpeg',
+        title: 'Vegetables',
+        author: 'jill111',
+    },
+    {
+        img: './images/image8.jpeg',
+        title: 'Water plant',
+        author: 'BkrmadtyaKarki',
+    }, {
+        img: './images/image3.jpeg',
+        title: 'Camera',
+        author: 'Danson67',
+    },
+    {
+        img: './images/image4.jpeg',
+        title: 'Morning',
+        author: 'fancycrave1',
+    },
+    {
+        img: './images/image5.jpeg',
+        title: 'Hats',
+        author: 'Hans',
+    },
+    {
+        img: './images/image6.jpeg',
+        title: 'Honey',
+        author: 'fancycravel',
+    },
+    {
+        img: './images/image7.jpeg',
+        title: 'Vegetables',
+        author: 'jill111',
+    },
+    {
+        img: './images/image8.jpeg',
+        title: 'Water plant',
+        author: 'BkrmadtyaKarki',
+    }, {
+        img: './images/image3.jpeg',
+        title: 'Camera',
+        author: 'Danson67',
+    },
+    {
+        img: './images/image4.jpeg',
+        title: 'Morning',
+        author: 'fancycrave1',
+    },
+    {
+        img: './images/image5.jpeg',
+        title: 'Hats',
+        author: 'Hans',
+    },
+    {
+        img: './images/image6.jpeg',
+        title: 'Honey',
+        author: 'fancycravel',
+    },
+    {
+        img: './images/image7.jpeg',
+        title: 'Vegetables',
+        author: 'jill111',
+    },
+    {
+        img: './images/image8.jpeg',
+        title: 'Water plant',
+        author: 'BkrmadtyaKarki',
+    }, {
+        img: './images/image3.jpeg',
+        title: 'Camera',
+        author: 'Danson67',
+    },
+    {
+        img: './images/image4.jpeg',
+        title: 'Morning',
+        author: 'fancycrave1',
+    },
+    {
+        img: './images/image5.jpeg',
+        title: 'Hats',
+        author: 'Hans',
+    },
+    {
+        img: './images/image6.jpeg',
+        title: 'Honey',
+        author: 'fancycravel',
+    },
+    {
+        img: './images/image7.jpeg',
+        title: 'Vegetables',
+        author: 'jill111',
+    },
+    {
+        img: './images/image8.jpeg',
+        title: 'Water plant',
+        author: 'BkrmadtyaKarki',
+    }, {
+        img: './images/image3.jpeg',
+        title: 'Camera',
+        author: 'Danson67',
+    },
+    {
+        img: './images/image4.jpeg',
+        title: 'Morning',
+        author: 'fancycrave1',
+    },
+    {
+        img: './images/image5.jpeg',
+        title: 'Hats',
+        author: 'Hans',
+    },
+    {
+        img: './images/image6.jpeg',
+        title: 'Honey',
+        author: 'fancycravel',
+    },
+    {
+        img: './images/image7.jpeg',
+        title: 'Vegetables',
+        author: 'jill111',
+    },
+    {
+        img: './images/image8.jpeg',
+        title: 'Water plant',
+        author: 'BkrmadtyaKarki',
+    }, {
+        img: './images/image3.jpeg',
+        title: 'Camera',
+        author: 'Danson67',
+    },
+    {
+        img: './images/image4.jpeg',
+        title: 'Morning',
+        author: 'fancycrave1',
+    },
+    {
+        img: './images/image5.jpeg',
+        title: 'Hats',
+        author: 'Hans',
+    },
+    {
+        img: './images/image6.jpeg',
+        title: 'Honey',
+        author: 'fancycravel',
+    },
+    {
+        img: './images/image7.jpeg',
+        title: 'Vegetables',
+        author: 'jill111',
+    },
+    {
+        img: './images/image8.jpeg',
+        title: 'Water plant',
+        author: 'BkrmadtyaKarki',
+    }, {
+        img: './images/image3.jpeg',
+        title: 'Camera',
+        author: 'Danson67',
+    },
+    {
+        img: './images/image4.jpeg',
+        title: 'Morning',
+        author: 'fancycrave1',
+    },
+    {
+        img: './images/image5.jpeg',
+        title: 'Hats',
+        author: 'Hans',
+    },
+    {
+        img: './images/image6.jpeg',
+        title: 'Honey',
+        author: 'fancycravel',
+    },
+    {
+        img: './images/image7.jpeg',
+        title: 'Vegetables',
+        author: 'jill111',
+    },
+    {
+        img: './images/image8.jpeg',
+        title: 'Water plant',
+        author: 'BkrmadtyaKarki',
     },
 ];
 

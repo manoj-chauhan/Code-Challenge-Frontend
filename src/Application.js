@@ -47,9 +47,6 @@ class Application extends Component {
               </div>
           </div>
 
-
-
-
       </div>
     );
   }
