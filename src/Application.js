@@ -10,11 +10,11 @@ const styl = {
 
 const grid_container = {
     flexBasis:'50%',
-    backgroundColor:'#cccccc',
+    backgroundColor:'#eeeeee',
 };
 const map_container = {
     flexBasis:'50%',
-    backgroundColor:'#cccccc',
+    backgroundColor:'#eeeeee',
 };
 
 class Application extends Component {

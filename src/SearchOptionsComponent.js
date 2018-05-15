@@ -38,7 +38,7 @@ export default class SearchOptionsComponent extends React.Component {
         return(
             <div style={barStyle}>
                 <AutoComplete
-                    hintText="Type anything"
+                    hintText="City"
                     dataSource={this.state.dataSource}
                     onUpdateInput={this.handleUpdateInput}
                 />
