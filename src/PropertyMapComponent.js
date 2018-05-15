@@ -28,11 +28,11 @@ const PropertyMapComponent = compose(
     withGoogleMap
 )((props) => (
         <GoogleMap
-            defaultZoom={8}
-            defaultCenter={
+            defaultZoom={12}
+            defaultCenter = {
                 {
-                    lat: -34.397,
-                    lng: 150.644
+                    lat: 28.669573,
+                    lng: 77.113815
                 }
             }>
             {
@@ -40,8 +40,8 @@ const PropertyMapComponent = compose(
                 <Marker
                     position={
                         {
-                            lat: -34.397,
-                            lng: 150.644
+                            lat: 28.701072,
+                            lng: 77.165473
                         }
                     }
                     onClick={
