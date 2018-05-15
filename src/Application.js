@@ -4,7 +4,6 @@ import AppBarComponent from "./AppBarComponent";
 import SearchOptionsComponent from "./SearchOptionsComponent";
 import PropertyMapComponent from "./PropertyMapComponent";
 
-
 const styl = {
     display:'flex'
 };
