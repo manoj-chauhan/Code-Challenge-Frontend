@@ -3,6 +3,7 @@ import SearchResultGridListComponent from './SearchResultGridListComponent';
 import AppBarComponent from "./AppBarComponent";
 import SearchOptionsComponent from "./SearchOptionsComponent";
 import PropertyMapComponent from "./PropertyMapComponent";
+import axios from "axios/index";
 
 const styl = {
     display:'flex'
@@ -18,17 +19,34 @@ const map_container = {
 };
 
 class Application extends Component {
+
+    updateResult(searchResult) {
+        this.setState({
+            searchResult:searchResult
+        });
+    }
+
+    constructor(props) {
+        super(props)
+        this.updateResult = this.updateResult.bind(this);
+        this.state = {
+            searchResult:[]
+
+    }
+    }
+
+
     render() {
         return (
             <div>
                 <AppBarComponent/>
-                <SearchOptionsComponent/>
+                <SearchOptionsComponent onResultReceived={this.updateResult}/>
                 <div style={styl}>
                     <div style={grid_container}>
-                        <SearchResultGridListComponent/>
+                        <SearchResultGridListComponent searchResult={this.state.searchResult}/>
                     </div>
                     <div style={map_container}>
-                        <PropertyMapComponent/>
+                        <PropertyMapComponent searchResult={this.state.searchResult}/>
                     </div>
                 </div>
             </div>
