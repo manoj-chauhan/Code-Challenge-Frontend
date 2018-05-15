@@ -1,8 +1,8 @@
 import React from "react"
 
 const barStyle = {
-        height: 40,
-        backgroundColor: 'red'
+        height: 48,
+        backgroundColor: '#20C063'
 };
 
 export default class AppBarComponent extends React.Component {

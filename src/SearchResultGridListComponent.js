@@ -14,9 +14,9 @@ const styles = {
     },
     gridList: {
         backgroundColor:'grey',
-        width: 500,
-        height: 450,
         overflowY: 'auto',
+        flexBasis:'100%',
+        height: `calc(100vh - 100px)`
     },
 };
 
@@ -68,7 +68,7 @@ export default class SearchResultGridListComponent extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {searchResult: []};
+        this.state = {searchResult: tilesData};
     }
 
     render() {
