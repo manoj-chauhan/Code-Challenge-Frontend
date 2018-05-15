@@ -13,7 +13,8 @@ const PropertyMapComponent = compose(
         }/>,
         containerElement: <div style={
             {
-                height: `400px`
+                height: `calc(100vh - 100px)`,
+                flexBasis: `50%`
             }
         }/>,
         mapElement: <div style={
