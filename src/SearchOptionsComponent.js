@@ -29,7 +29,7 @@ export default class SearchOptionsComponent extends React.Component {
     }
 
     handleUpdateInput = (value) => {
-            if(value.length > 3) {
+            if(value.length > 2) {
                 this.fetchCitySuggestions(value);
             }
     }
@@ -37,7 +37,20 @@ export default class SearchOptionsComponent extends React.Component {
 
     onCitySelected = (selection, index) => {
         console.log("selection: " + selection + "   index: " + index);
-    };
+    }
+
+    onSearchButtonClicked(button) {
+        console.log("Search Button Clicked");
+        var self = this;
+        axios.get('http://34.217.10.112:8000/property')
+            .then(function (response) {
+                self.props.onResultReceived(response.data)
+                console.log("Response: " + response);
+            })
+            .catch(function (error) {
+                console.log("Error: " + error);
+            })
+    }
 
 
     render(){
@@ -54,31 +67,17 @@ export default class SearchOptionsComponent extends React.Component {
                     label="Search"
                     labelPosition="before"
                     containerElement="label"
-                    // onClick={}
+                    onClick={this.onSearchButtonClicked}
                 />
             </div>
 
         )
     }
 
-    componentDidMount() {
-        var self = this;
-        axios.get('http://localhost:8000/property')
-            .then(function (response) {
-                self.props.onResultReceived(response.data)
-                console.log("Response: " + response);
-            })
-            .catch(function (error) {
-                console.log("Error: " + error);
-            })
-
-
-    }
-
 
     fetchCitySuggestions(keyword) {
         var self = this;
-        axios.get('http://localhost:8000/city/suggestions?initials=' + keyword)
+        axios.get('http://34.217.10.112:8000/city/suggestions?initials=' + keyword)
             .then(function (response) {
                 self.updateDataSourceForCitySuggestion(response.data)
                 console.log("Response: " + response);
