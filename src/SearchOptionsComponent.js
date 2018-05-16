@@ -1,6 +1,7 @@
 import React from "react"
 import AutoComplete from 'material-ui/AutoComplete';
 import RaisedButton from 'material-ui/RaisedButton';
+import MenuItem from 'material-ui/MenuItem';
 import axios from "axios/index";
 
 const barStyle = {
@@ -18,71 +19,26 @@ const searchButtonStyle = {
     marginLeft:`10px`
 };
 
-const tilesData = [
-    {
-        img: 'images/home.jpeg',
-        title: 'Breakfast',
-        author: 'jill111',
-    },
-    {
-        img: 'images/home.jpeg',
-        title: 'Tasty burger',
-        author: 'pashminu',
-    },
-    {
-        img: 'images/home.jpeg',
-        title: 'Camera',
-        author: 'Danson67',
-    },
-    {
-        img: 'images/home.jpeg',
-        title: 'Morning',
-        author: 'fancycrave1',
-    },
-    {
-        img: 'images/home.jpeg',
-        title: 'Hats',
-        author: 'Hans',
-    },
-    {
-        img: 'images/home.jpeg',
-        title: 'Honey',
-        author: 'fancycravel',
-    },
-    {
-        img: 'images/home.jpeg',
-        title: 'Vegetables',
-        author: 'jill111',
-    },
-    {
-        img: 'images/home.jpeg',
-        title: 'Water plant',
-        author: 'BkrmadtyaKarki',
-    },
-];
-
-
-
-
-
 export default class SearchOptionsComponent extends React.Component {
 
     constructor(props) {
         super(props)
         this.state = {
-            dataSource: ['Item1', 'Item1', 'Item1', 'Item1', 'Item1', 'Item1', 'Item1']
+             dataSource : []
         }
     }
 
     handleUpdateInput = (value) => {
-        this.setState({
-            dataSource: [
-                value,
-                value + value,
-                value + value + value,
-            ],
-        });
+            if(value.length > 3) {
+                this.fetchCitySuggestions(value);
+            }
+    }
+
+
+    onCitySelected = (selection, index) => {
+        console.log("selection: " + selection + "   index: " + index);
     };
+
 
     render(){
         return(
@@ -90,6 +46,7 @@ export default class SearchOptionsComponent extends React.Component {
                 <AutoComplete
                     hintText="City"
                     dataSource={this.state.dataSource}
+                    onNewRequest={this.onCitySelected}
                     onUpdateInput={this.handleUpdateInput}
                 />
                 <RaisedButton
@@ -97,6 +54,7 @@ export default class SearchOptionsComponent extends React.Component {
                     label="Search"
                     labelPosition="before"
                     containerElement="label"
+                    // onClick={}
                 />
             </div>
 
@@ -112,9 +70,35 @@ export default class SearchOptionsComponent extends React.Component {
             })
             .catch(function (error) {
                 console.log("Error: " + error);
-                self.props.onResultReceived(tilesData)
             })
 
+
+    }
+
+
+    fetchCitySuggestions(keyword) {
+        var self = this;
+        axios.get('http://localhost:8000/city/suggestions?initials=' + keyword)
+            .then(function (response) {
+                self.updateDataSourceForCitySuggestion(response.data)
+                console.log("Response: " + response);
+            })
+            .catch(function (error) {
+                console.log("Error: " + error);
+            })
+
+
+    }
+
+    updateDataSourceForCitySuggestion(data) {
+        let dSource = [];
+        data.map(item => {
+                dSource.push(item.name)
+        }
+        )
+        this.setState({
+            dataSource : dSource
+        })
 
     }
 }

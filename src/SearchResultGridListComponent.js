@@ -37,7 +37,7 @@ export default class SearchResultGridListComponent extends React.Component {
                             subtitle={<span>by <b>{tile.city}</b></span>}
                             actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
                         >
-                            {/*<img src={tile.img} />*/}
+                            <img src={tile.image} />
                         </GridTile>
                     ))}
                 </GridList>
