@@ -39,7 +39,7 @@ export default class SearchOptionsComponent extends React.Component {
         console.log("selection: " + selection + "   index: " + index);
     }
 
-    onSearchButtonClicked(button) {
+    componentDidMount() {
         console.log("Search Button Clicked");
         var self = this;
         axios.get('http://34.217.10.112:8000/property')
@@ -67,7 +67,7 @@ export default class SearchOptionsComponent extends React.Component {
                     label="Search"
                     labelPosition="before"
                     containerElement="label"
-                    onClick={this.onSearchButtonClicked}
+                    // onClick={this.onSearchButtonClicked}
                 />
             </div>
 
