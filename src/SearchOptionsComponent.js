@@ -42,7 +42,7 @@ export default class SearchOptionsComponent extends React.Component {
     componentDidMount() {
         console.log("Search Button Clicked");
         var self = this;
-        axios.get('http://34.217.10.112:8000/property')
+        axios.get('http://54.149.167.240:8000/property')
             .then(function (response) {
                 self.props.onResultReceived(response.data)
                 console.log("Response: " + response);
@@ -77,7 +77,7 @@ export default class SearchOptionsComponent extends React.Component {
 
     fetchCitySuggestions(keyword) {
         var self = this;
-        axios.get('http://34.217.10.112:8000/city/suggestions?initials=' + keyword)
+        axios.get('http://54.149.167.240:8000/city/suggestions?initials=' + keyword)
             .then(function (response) {
                 self.updateDataSourceForCitySuggestion(response.data)
                 console.log("Response: " + response);
